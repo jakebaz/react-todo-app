@@ -21,10 +21,10 @@ function TodoForm(props: TodoFormProps) {
   const handleSave = (e: React.FormEvent<HTMLElement>) => {
     e.preventDefault();
 
-    // props.onSubmit({
-    //   id: ulid(),
-    //   text: input,
-    // });
+    props.onSubmit({
+      id: ulid(),
+      text: input,
+    });
 
     setInput('');
   };
